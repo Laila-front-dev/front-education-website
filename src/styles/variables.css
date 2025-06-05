@@ -1,0 +1,45 @@
+:root {
+  --clr-primary-900: hsl(225, 55%, 20%);
+  --clr-primary-400: hsla(253, 75%, 61%, 1);
+  --clr-accent-300: hsl(43, 100%, 68%);
+  --clr-accent-200: hsl(252, 45%, 98%);
+  --clr-accent-100: hsl(254, 100%, 94%);
+  /* --clr-neutral-900: hsl(0, 0%, 0%); */
+  --clr-neutral-900: hsl(197, 100%, 97%);
+  --clr-neutral-800: hsl(30, 100%, 97%);
+  --clr-neutral-700: hsl(235, 85%, 97%);
+  --clr-neutral-600: hsl(328, 100%, 97%);
+  --clr-neutral-500: hsl(260, 100%, 98%);
+  --clr-neutral-400: hsl(41, 100%, 97%);
+  --clr-neutral-300: hsl(152, 62%, 96%);
+  --clr-neutral-200: hsl(350, 86%, 97%);
+  --clr-neutral-100: hsl(206, 100%, 96%);
+  --clr-neutral-50: hsl(0, 0%, 100%);
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semiBold: 600;
+  --fw-bold: 700;
+
+  --fs-900: 3.75rem; /* 60 px */
+  --fs-800: 3.125rem; /* 50 px */
+  --fs-700: 2.813rem; /* 45 px */
+  --fs-600: 2.438rem; /* 39 px */
+  --fs-500: 1.563rem; /* 25 px */
+  --fs-400: 1.438rem; /* 23 px */
+  --fs-300: 1.375rem; /* 22 px */
+  --fs-200: 1.25rem; /* 20 px */
+  --fs-100: 1.125rem; /* 18 px */
+  --fs-200: 1.063rem; /* 17 px */
+  --fs-100: 1rem; /* 16 px */
+  --fs-50: 0.938rem; /* 15 px */
+  --fs-20: 0.875rem; /* 14 px */
+  --fs-10: 0.75rem; /* 12 px */
+
+  --fs-primary-heading: var(--fs-900);
+  --fs-secondary-heading: var(--fs-700);
+  --fs-tertiary-heading: var(--fs-100);
+  --fs-number: var(--fs-800);
+  --fs-link: var(--fs-200);
+  --fs-button: var(--fs-50);
+}

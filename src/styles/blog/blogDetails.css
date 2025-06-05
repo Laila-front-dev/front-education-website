@@ -1,0 +1,38 @@
+.blog-details p {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  color: hsl(105, 8%, 21%);
+  margin-block-end: 1.5rem;
+}
+
+.blog-card.card img {
+  position: relative !important;
+  border-radius: 15px;
+}
+
+.blog-card.card .button {
+  background-color: #e9e2ff;
+  color: var(--clr-primary-400);
+}
+
+.blog-card.card .button::before {
+  background-color: #e3dbff;
+}
+
+.blog-card.card .article-date {
+  position: relative;
+  color: #4d5756;
+  padding-inline-start: 1.5rem;
+}
+
+.blog-card.card .article-date::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+  background-image: url("/images/calendar.svg");
+}

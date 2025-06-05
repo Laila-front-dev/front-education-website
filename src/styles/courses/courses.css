@@ -1,0 +1,142 @@
+.course-section .button {
+  width: 225px;
+}
+
+.courses-card.card {
+  position: relative;
+  border: 1px dotted var(--clr-primary-900);
+  background-color: var(--clr-neutral-50);
+}
+
+.card-image {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  aspect-ratio: 1 / 1;
+}
+
+.courses-card span {
+  position: absolute;
+  bottom: 0;
+  background-color: var(--clr-primary-900);
+  color: var(--clr-neutral-50);
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  letter-spacing: 0.5px;
+}
+
+.card-details ul {
+  padding-block-end: 1rem;
+  border-bottom: 1px dotted var(--clr-primary-900);
+}
+
+.course-details ul li,
+.card-details ul li {
+  position: relative;
+  padding-inline-start: 1rem;
+}
+
+.card-details ul li {
+  color: #4d5756;
+  font-size: 14px;
+}
+
+.course-details ul li::before,
+.card-details ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.course-details ul li:first-child:before,
+.card-details ul li:first-child:before {
+  background-image: url("/images/book.svg");
+}
+
+.course-details ul li:nth-child(2):before,
+.card-details ul li:nth-child(2):before {
+  background-image: url("/images/time.svg");
+}
+
+.course-details ul li:last-child:before,
+.card-details ul li:last-child:before {
+  background-image: url("/images/auth.svg");
+}
+
+.courses-card h4 {
+  font-size: 14px;
+  color: #4d5756;
+  font-weight: 500;
+}
+
+.courses-card .button {
+  font-size: 14px !important;
+  color: #4d5756 !important;
+  font-weight: 500 !important;
+  background-color: transparent !important;
+  width: fit-content !important;
+}
+
+.courses-card .button::before {
+  display: none !important;
+}
+
+/* course details */
+
+.tabs {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .tabs {
+    gap: 0.5rem;
+  }
+}
+
+.tab-button {
+  padding: 0.5rem 1rem;
+  border: none;
+  height: fit-content;
+  background-color: var(--clr-accent-100);
+  color: var(--clr-primary-900);
+  margin-block: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.tab-button.active {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-50);
+}
+
+.tab-content {
+  padding-block: 2rem;
+}
+
+.tab-panel {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 1030px) {
+  .course-section .button {
+    width: 181px;
+  }
+}

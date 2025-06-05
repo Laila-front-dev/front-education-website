@@ -1,0 +1,19 @@
+.legal-page p {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  color: hsl(105, 8%, 21%);
+  margin-block-end: 1.5rem;
+}
+
+.legal-page h1,
+.legal-page h2,
+.legal-page h3,
+.legal-page h4,
+.legal-page h5,
+.legal-page h6 {
+  color: var(--clr-primary-900);
+  font-size: var(--fs-secondary-heading);
+  text-transform: capitalize;
+  line-height: 1.3;
+}

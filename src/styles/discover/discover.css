@@ -1,0 +1,35 @@
+.discover-content {
+  height: fit-content;
+  margin-block: 0;
+  border-radius: 5px;
+  color: var(--clr-neutral-50);
+  overflow: hidden;
+}
+
+.discover-content h3 {
+  color: var(--clr-neutral-50) !important;
+}
+
+.discover-content:first-child {
+  background-color: var(--clr-primary-400);
+}
+
+.discover-content:first-child .button {
+  background-color: var(--clr-accent-300);
+}
+
+.discover-content:first-child .button::before {
+  background-color: hsl(33, 99%, 68%);
+}
+
+.discover-content:last-child {
+  background-color: var(--clr-accent-300);
+}
+
+.discover-image img {
+  position: relative !important;
+  width: 433px !important;
+  height: 300px !important;
+  object-fit: contain;
+  /* background: red; */
+}

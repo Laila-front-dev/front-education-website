@@ -1,0 +1,48 @@
+.subscribe-section form {
+  position: relative;
+  max-width: 500px;
+  height: 70px;
+  display: flex;
+  overflow: hidden;
+  margin-block-start: 2rem;
+
+  border-radius: 10px;
+}
+
+.subscribe-section form input {
+  border: none;
+  padding: 1rem;
+  width: 100%;
+}
+
+.subscribe-section form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 1rem;
+  margin: 0.7rem;
+  text-transform: capitalize;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.newsletter-email-error::placeholder {
+  color: red;
+}
+
+@media (max-width: 992px) {
+  .subscribe-section form {
+    display: block;
+    overflow: visible;
+    height: fit-content;
+  }
+
+  .subscribe-section form button {
+    position: relative;
+    margin-block: 1rem;
+    margin-inline: 0;
+  }
+}

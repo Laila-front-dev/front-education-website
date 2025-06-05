@@ -1,0 +1,52 @@
+.card-section h2 {
+  max-width: 117vh;
+  padding-block: 2rem;
+}
+
+article.card {
+  background-color: #e3dbff;
+  padding: 1rem;
+  border-radius: 15px;
+  margin-block: 0;
+  /* max-width: 364px; */
+  /* margin: auto; */
+  width: 100%;
+  transition: 0.5s all ease-in;
+}
+
+article.card:hover {
+  box-shadow: 0 0 10px hsl(0deg 0% 0% / 38.82%);
+}
+
+.card img {
+  position: relative !important;
+  border-radius: 15px;
+}
+
+.card h3 {
+  line-height: 1.6;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  /* max-height: 3.2rem; */
+}
+
+.card-content {
+  display: grid;
+  height: 170px;
+}
+
+.card-content > div {
+  padding-block-start: 1rem;
+}
+
+.card-details {
+  align-self: end;
+}
+
+@media (max-width: 1030px) {
+  .card-title {
+    padding-block-end: 2rem;
+  }
+}

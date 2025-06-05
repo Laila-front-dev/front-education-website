@@ -1,0 +1,59 @@
+.button {
+  position: relative;
+  width: 180px;
+  display: block;
+  border-radius: 30px;
+  transition: 0.5s all ease-in;
+}
+
+.button::before {
+  content: "\2192";
+  position: absolute;
+  font-size: 2rem;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: hsl(253, 60%, 60%);
+  border-radius: 50%;
+  width: 50px;
+  height: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s all ease-in-out;
+}
+
+.button:hover {
+  background-color: black;
+}
+
+.hero-content .button:hover:before,
+.button:hover::before {
+  background-color: black;
+}
+
+/* media query */
+
+@media (max-width: 75em) {
+  .button {
+    width: 150px;
+    padding-block: 0.8rem;
+    font-size: 0.8rem;
+  }
+
+  .button::before {
+    width: 39px;
+    height: inherit;
+    font-size: 1rem;
+  }
+}
+
+/* layout page */
+
+.page-layout .about-section .about-details .button {
+  background-color: hsl(165, 62%, 48%);
+}
+
+.page-layout .about-section .about-details .button::before {
+  background-color: hsl(165, 67%, 53%);
+}

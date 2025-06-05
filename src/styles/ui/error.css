@@ -1,0 +1,11 @@
+.error-content p {
+  font-family: "Sora", sans-serif;
+  font-size: 1rem;
+  line-height: 2;
+  color: hsl(105, 8%, 21%);
+  margin-block-end: 1.5rem;
+}
+
+.error-image img {
+  position: relative !important;
+}

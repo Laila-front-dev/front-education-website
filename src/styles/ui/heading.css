@@ -1,0 +1,33 @@
+.primary-heading {
+  font-size: var(--fs-primary-heading);
+  text-transform: capitalize;
+  color: var(--clr-primary-900);
+  line-height: 1.2;
+}
+
+@media (max-width: 35em) {
+  .primary-heading {
+    font-size: 2.3rem;
+    line-height: 1.3;
+  }
+}
+
+.secondary-heading {
+  font-size: var(--fs-secondary-heading);
+  text-transform: capitalize;
+  line-height: 1.3;
+  color: var(--clr-primary-900);
+}
+
+@media (max-width: 35em) {
+  .secondary-heading {
+    font-size: 2.3rem;
+  }
+}
+
+.tertiary-heading {
+  font-size: var(--fs-tertiary-heading);
+  font-weight: var(--fw-bold);
+  color: var(--clr-primary-900);
+  text-transform: capitalize;
+}

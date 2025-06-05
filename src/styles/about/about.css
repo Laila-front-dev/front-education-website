@@ -1,0 +1,129 @@
+.about-grid {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 80px 1fr 1fr 80px;
+  grid-template-rows: 50px 170px 1fr;
+  grid-auto-rows: 150px;
+  z-index: 2;
+}
+
+@media (max-width: 75rem) {
+  .about-grid {
+    grid-template-rows: 50px 398px 1fr;
+  }
+  .about-content {
+    grid-row: 2;
+  }
+}
+
+@media (max-width: 62rem) {
+  .about-grid {
+    grid-template-rows: 50px 281px 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .about-grid {
+    grid-template-rows: 50px 264px 1fr;
+  }
+}
+
+@media (max-width: 35rem) {
+  .about-grid {
+    grid-template-columns: 42px 1fr 1fr 5px;
+    grid-template-rows: 50px 170px 1fr;
+  }
+}
+
+.about-content {
+  position: relative;
+}
+
+.about-content .number-of-years {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  border-radius: 100%;
+  border: 3px solid white;
+  width: 200px;
+  height: 200px;
+  padding: 1rem;
+}
+
+.about-content .number-of-years li span {
+  display: block;
+  text-align: center;
+}
+
+@media (max-width: 35em) {
+  .about-content .number-of-years {
+    width: 170px;
+    height: 170px;
+  }
+
+  .about-content .number-of-years li span:first-child {
+    font-size: 1.7rem;
+  }
+
+  .about-content .number-of-years li span:last-child {
+    font-size: 1.3rem;
+  }
+}
+
+.about-items {
+  width: 100%;
+  height: fit-content;
+}
+
+.about-image {
+  height: inherit;
+}
+
+.about-image img {
+  position: relative !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 9px;
+}
+
+.about-details li {
+  margin-block: 0;
+}
+
+@media (max-width: 35em) {
+  .about-details li {
+    margin-block: inherit;
+  }
+}
+
+/* layout page */
+
+.page-layout .about-section .about-details span {
+  position: relative;
+  padding-inline-start: 2rem;
+  background-color: transparent;
+  color: #fe543d;
+}
+
+.page-layout .about-section .about-details span::before {
+  content: "";
+  position: absolute;
+  background-image: url("/images/about.svg");
+  background-repeat: no-repeat;
+  width: 23px;
+  height: 17px;
+  left: 0;
+}
+
+.page-layout .about-section .about-details h2 {
+  font-size: 1.9rem;
+}
+
+.page-layout .about-section .number-of-years {
+  background-color: hsl(7, 99%, 62%);
+  color: white;
+}

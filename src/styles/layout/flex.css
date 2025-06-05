@@ -1,0 +1,241 @@
+/* --- FLEX CONTAINER PROPERTIES --- */
+
+/* Basic Flex Container */
+.flex {
+  display: flex;
+}
+
+.inline-flex {
+  display: inline-flex;
+}
+
+/* Flex Direction */
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.flex-col-reverse {
+  flex-direction: column-reverse;
+}
+
+/* Flex Wrap */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+/* Justify Content (Main Axis Alignment) */
+.justify-start {
+  justify-content: flex-start;
+}
+
+.justify-end {
+  justify-content: flex-end; /* Corrected for Flexbox, not justify-items */
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+/* Align Items (Cross Axis Alignment for single line) */
+.items-start {
+  align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.items-baseline {
+  align-items: baseline;
+}
+
+.items-stretch {
+  align-items: stretch;
+}
+
+/* Align Content (Cross Axis Alignment for multi-line flex containers) */
+.content-start {
+  align-content: flex-start;
+}
+
+.content-end {
+  align-content: flex-end;
+}
+
+.content-center {
+  align-content: center;
+}
+
+.content-between {
+  align-content: space-between;
+}
+
+.content-around {
+  align-content: space-around;
+}
+
+.content-stretch {
+  align-content: stretch;
+}
+
+/* Gap (for spacing between flex items) */
+.gap-0 {
+  gap: 0;
+}
+.gap-xs {
+  gap: 0.25rem;
+} /* Example, define your own spacing scale */
+.gap-sm {
+  gap: 0.5rem;
+}
+.gap-md {
+  gap: 1rem;
+}
+.gap-lg {
+  gap: 2rem;
+}
+.gap-xl {
+  gap: 3rem;
+}
+/* You can also define row-gap and column-gap separately if needed */
+.row-gap-md {
+  row-gap: 1rem;
+}
+.col-gap-md {
+  column-gap: 1rem;
+}
+
+/* --- FLEX ITEM PROPERTIES --- */
+
+/* Flex Grow */
+.flex-grow {
+  flex-grow: 1; /* Allows item to grow to fill available space */
+}
+.flex-grow-0 {
+  flex-grow: 0; /* Prevents item from growing */
+}
+
+/* Flex Shrink */
+.flex-shrink {
+  flex-shrink: 1; /* Allows item to shrink if necessary */
+}
+.flex-shrink-0 {
+  flex-shrink: 0; /* Prevents item from shrinking */
+}
+
+/* Flex Basis (Initial size of a flex item) */
+.flex-basis-auto {
+  flex-basis: auto;
+}
+.flex-basis-0 {
+  flex-basis: 0;
+}
+/* You can add more for specific percentages, e.g. */
+.flex-basis-full {
+  flex-basis: 100%;
+}
+.flex-basis-1\/2 {
+  flex-basis: 50%;
+} /* Tailwind-like naming */
+
+/* Flex (Shorthand for flex-grow, flex-shrink, flex-basis) */
+.flex-initial {
+  /* grow: 0, shrink: 1, basis: auto */
+  flex: 0 1 auto;
+}
+.flex-auto {
+  /* grow: 1, shrink: 1, basis: auto */
+  flex: 1 1 auto;
+}
+.flex-none {
+  /* grow: 0, shrink: 0, basis: auto */
+  flex: none; /* shorthand for flex: 0 0 auto; */
+}
+.flex-1 {
+  /* grow: 1, shrink: 1, basis: 0% */
+  flex: 1 1 0%;
+}
+
+/* Order */
+.order-first {
+  order: -9999; /* A very low number to ensure it's first */
+}
+.order-last {
+  order: 9999; /* A very high number to ensure it's last */
+}
+.order-0 {
+  order: 0;
+}
+.order-1 {
+  order: 1;
+}
+.order-2 {
+  order: 2;
+}
+/* ... you can add more specific order numbers as needed */
+
+/* Align Self (Overrides align-items for a single flex item) */
+.self-auto {
+  align-self: auto;
+}
+.self-start {
+  align-self: flex-start;
+}
+.self-end {
+  align-self: flex-end;
+}
+.self-center {
+  align-self: center;
+}
+.self-baseline {
+  align-self: baseline;
+}
+.self-stretch {
+  align-self: stretch;
+}
+
+.gap-18 {
+  gap: 15rem;
+}
+
+.gap-2-5 {
+  gap: 2.5rem;
+}
+
+@media (max-width: 35em) {
+  .direction-column {
+    flex-direction: column;
+  }
+}

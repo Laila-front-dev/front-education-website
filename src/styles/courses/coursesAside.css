@@ -1,0 +1,31 @@
+.course-aside {
+  background-color: #e8e8f4;
+  color: #333931;
+  padding-inline: 1rem;
+  padding-block: 2rem;
+  border-radius: 8px;
+}
+.course-aside ul li {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+.course-aside ul li:not(:last-child) {
+  margin-block-end: 1.5rem;
+  padding-block-end: 1rem;
+  border-bottom: 1px solid #ddd;
+}
+
+.course-aside ul li h3 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #333931;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+}
+
+.course-aside ul li p {
+  font-size: 1rem;
+  color: #333931;
+}

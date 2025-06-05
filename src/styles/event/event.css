@@ -1,0 +1,123 @@
+.event-card.card {
+  position: relative;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+.event-card .card-image img {
+  border-radius: 0 !important;
+  /* object-fit: cover; */
+}
+
+.event-card h3,
+.event-card p {
+  line-height: 1.6rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  max-height: 3.2rem;
+}
+
+.event-card-content {
+  display: grid;
+  height: 200px;
+}
+
+.event-card-content > div {
+  padding-block: 1rem;
+}
+
+.event-card-content > div,
+.event-card-content > p {
+  padding-inline: 1rem;
+  /* padding-block: 1rem; */
+}
+
+.event-card p {
+  align-self: center;
+}
+
+.event-card-content span {
+  position: absolute;
+  display: block;
+  width: 90px;
+  height: 70px;
+  top: 0;
+  right: 0;
+  background-color: var(--clr-accent-300);
+  color: var(--clr-neutral-50);
+  margin: 1rem;
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.5px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+
+.event-list {
+  align-self: end;
+}
+
+.event-list ul li {
+  position: relative;
+  padding-inline-start: 1rem;
+  color: #4d5756;
+  font-size: 14px;
+}
+
+.event-list ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15px;
+  height: 15px;
+}
+
+.event-list ul li:first-child:before {
+  background-image: url("/images/time.svg");
+}
+
+.event-list ul li:last-child:before {
+  background-image: url("/images/location.svg");
+}
+
+/* countdown */
+
+aside h3 {
+  text-transform: capitalize;
+  font-size: var(--fs-400);
+}
+
+.countdown-timer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.time-box {
+  text-align: center;
+}
+
+.time-box .time-value {
+  display: grid;
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-50);
+  padding: 1rem;
+  margin-block: 1rem;
+  width: 70px;
+}
+
+.time-value {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.time-label {
+  font-size: 1rem;
+  font-weight: 500;
+}
