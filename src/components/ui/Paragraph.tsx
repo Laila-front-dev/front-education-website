@@ -1,7 +1,7 @@
 import { ParagraphProps } from "@/types";
 import ReactMarkdown from "react-markdown";
 
-function Paragraph({ content }: ParagraphProps): React.JSX.Element {
+function Paragraph({ content }: ParagraphProps) {
   return <ReactMarkdown>{content}</ReactMarkdown>;
 }
 

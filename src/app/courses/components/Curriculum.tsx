@@ -1,7 +1,7 @@
 import { CurriculumProps } from "@/types";
 import ReactMarkdown from "react-markdown";
 
-function Curriculum({ curriculum }: CurriculumProps): React.JSX.Element {
+function Curriculum({ curriculum }: CurriculumProps) {
   return (
     <div>
       <ReactMarkdown>{curriculum}</ReactMarkdown>

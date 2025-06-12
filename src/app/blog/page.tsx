@@ -13,24 +13,26 @@ interface PageProps {
 }
 
 export async function generateMetadata(): Promise<Metadata> {
-  const data = await getPageBySlug("blog", false);
+  const result = await getPageBySlug("blog", false);
   // console.log(data.data);
 
-  if (!data) return {};
+  const data = result?.data;
+
+  if (!data || !Array.isArray(data) || data.length === 0) return {};
   return {
-    title: data.data[0]?.title,
-    description: data.data[0]?.description,
+    title: data[0]?.title,
+    description: data[0]?.description,
     openGraph: {
-      title: data.data[0]?.title,
-      description: data.data[0]?.description,
+      title: data[0]?.title,
+      description: data[0]?.description,
       url: "http://localhost:3000/blog",
       siteName: "eduSpark",
       images: [
         {
-          url: data.data?.image || "/images/eduspark.png",
+          url: data[0]?.image || "/images/eduspark.png",
           width: 1200,
           height: 630,
-          alt: data.data?.title || "eduSpark",
+          alt: data[0]?.title || "eduSpark",
         },
       ],
       type: "website",
