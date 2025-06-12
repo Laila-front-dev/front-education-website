@@ -53,6 +53,7 @@ const geistMono = Epilogue({
 
 async function loader() {
   const data = await getGlobalSetttings();
+  console.log(data);
 
   if (!data) throw new Error("Failed to fetch global settings");
   return { footer: data.data.Footer };
