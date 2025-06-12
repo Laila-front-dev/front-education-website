@@ -1,8 +1,9 @@
 import { getPageBySlug } from "@/data/loaders";
 import { notFound } from "next/navigation";
 import { ContentList } from "./components/layout/ContentList";
-import { Card, type CardProps } from "./components/layout/Card";
+
 import Link from "next/link";
+import EventCard from "./components/layout/EventCard";
 
 async function loader(slug: string) {
   const { data } = await getPageBySlug(slug);
@@ -10,9 +11,9 @@ async function loader(slug: string) {
   return { blocks: data[0]?.blocks, data };
 }
 
-const EventCard = (props: Readonly<CardProps>) => (
-  <Card {...props} basePath="event" />
-);
+// const EventCard = (props: Readonly<CardProps>) => (
+//   <Card {...props} basePath="event" />
+// );
 
 interface PageProps {
   searchParams: Promise<{ page?: string; query?: string }>;

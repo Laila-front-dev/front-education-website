@@ -1,11 +1,16 @@
 import { getPageBySlug } from "@/data/loaders";
 import { notFound } from "next/navigation";
-import { BlogSlider, type BlogSliderProps } from "./components/BlogSlider";
 import { ContentList } from "./components/layout/ContentList";
 import Link from "next/link";
-import { Card, type CardProps } from "./components/layout/Card";
+
 import { Search } from "@/components/Search";
 import { Metadata } from "next";
+import BlogCard from "./components/layout/BlogCard";
+import BlogSliders from "./components/layout/BlogSliders";
+
+interface PageProps {
+  searchParams: Promise<{ page?: string; query?: string }>;
+}
 
 export async function generateMetadata(): Promise<Metadata> {
   const data = await getPageBySlug("blog", false);
@@ -65,17 +70,13 @@ async function loader(slug: string) {
   };
 }
 
-const BlogSliders = (props: Readonly<BlogSliderProps>) => (
-  <BlogSlider {...props} basePath="blog" />
-);
+// const BlogSliders = (props: Readonly<BlogSliderProps>) => (
+//   <BlogSlider {...props} basePath="blog" />
+// );
 
-const BlogCard = (props: Readonly<CardProps>) => (
-  <Card {...props} basePath="blog" />
-);
-
-interface PageProps {
-  searchParams: Promise<{ page?: string; query?: string }>;
-}
+// const BlogCard = (props: Readonly<CardProps>) => (
+//   <Card {...props} basePath="blog" />
+// );
 
 async function page({ searchParams }: PageProps) {
   const { query, page } = await searchParams;

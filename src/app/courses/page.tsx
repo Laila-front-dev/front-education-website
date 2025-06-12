@@ -1,10 +1,13 @@
 import { getPageBySlug } from "@/data/loaders";
 import { notFound } from "next/navigation";
 import { ContentList } from "./components/layout/ContentList";
-import { Card, type CardProps } from "./components/layout/Card";
 import Link from "next/link";
 import { Metadata } from "next";
+import CourseCard from "./components/layout/CourseCard";
 
+interface PageProps {
+  searchParams: Promise<{ page?: string; query?: string }>;
+}
 export async function generateMetadata(): Promise<Metadata> {
   const data = await getPageBySlug("courses", false);
   // console.log(data.data);
@@ -53,14 +56,6 @@ async function loader(slug: string) {
 
   if (data.length === 0) notFound();
   return { blocks: data[0]?.blocks, data };
-}
-
-export const CourseCard = (props: Readonly<CardProps>) => (
-  <Card {...props} basePath="courses" />
-);
-
-interface PageProps {
-  searchParams: Promise<{ page?: string; query?: string }>;
 }
 
 async function page({ searchParams }: PageProps) {
