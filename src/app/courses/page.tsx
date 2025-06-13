@@ -9,7 +9,7 @@ interface PageProps {
   searchParams: Promise<{ page?: string; query?: string }>;
 }
 export async function generateMetadata(): Promise<Metadata> {
-  const result = await getPageBySlug("blog", false);
+  const result = await getPageBySlug("courses", false);
   // console.log(data.data);
 
   const data = result?.data;
@@ -21,11 +21,11 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: data[0]?.title,
       description: data[0]?.description,
-      url: "http://localhost:3000/blog",
+      url: "https://edusparke.netlify.app/courses",
       siteName: "eduSpark",
       images: [
         {
-          url: data[0]?.image || "/images/eduspark.png",
+          url: data[0]?.image || "https://edusparke.netlify.app/images/eduspark.png",
           width: 1200,
           height: 630,
           alt: data[0]?.title || "eduSpark",
@@ -47,7 +47,7 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     alternates: {
-      canonical: "http://localhost:3000/courses",
+      canonical: "https://edusparke.netlify.app/courses",
     },
   };
 }
