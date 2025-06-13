@@ -13,7 +13,7 @@ export async function generateMetadata(): Promise<Metadata> {
     openGraph: {
       title: data.data?.title,
       description: data.data?.description,
-      url: "http://localhost:3000/",
+      url: "https://edusparke.netlify.app/",
       siteName: "eduSpark",
       images: [
         {
@@ -39,7 +39,7 @@ export async function generateMetadata(): Promise<Metadata> {
       },
     },
     alternates: {
-      canonical: "http://localhost:3000/",
+      canonical: "https://edusparke.netlify.app/",
     },
   };
 }
