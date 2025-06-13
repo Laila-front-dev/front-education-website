@@ -23,12 +23,12 @@ export async function generateMetadata({
     openGraph: {
       title: data.data[0]?.title,
       description: data.data[0]?.description,
-      url: `http://localhost:3000/courses/${resolvedParams.slug}`,
+      url: `https://edusparke.netlify.app/courses/${resolvedParams.slug}`,
       siteName: "eduSpark",
       images: [
         {
           url:
-            `http://localhost:1337${data.data[0]?.image.url}` ||
+            `https://back-education-website-production.up.railway.app/${data.data[0]?.image.url}` ||
             "/images/eduspark.png",
           width: 1200,
           height: 630,
@@ -51,7 +51,7 @@ export async function generateMetadata({
       },
     },
     alternates: {
-      canonical: `http://localhost:3000/courses/${resolvedParams.slug}`,
+      canonical: `https://edusparke.netlify.app/courses/${resolvedParams.slug}`,
     },
   };
 }
