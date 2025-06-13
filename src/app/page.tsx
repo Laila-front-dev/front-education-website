@@ -17,7 +17,7 @@ export async function generateMetadata(): Promise<Metadata> {
       siteName: "eduSpark",
       images: [
         {
-          url: data.data?.image || "/images/eduspark.png",
+          url: data.data?.image || "https://edusparke.netlify.app/images/eduspark.png",
           width: 1200,
           height: 630,
           alt: data.data?.title || "eduSpark",
