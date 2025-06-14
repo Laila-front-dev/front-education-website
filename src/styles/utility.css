@@ -148,6 +148,9 @@
 .fs-600 {
   font-size: var(--fs-600);
 }
+.fs-50 {
+  font-size: var(--fs-50);
+}
 .fs-20 {
   font-size: var(--fs-20);
 }
