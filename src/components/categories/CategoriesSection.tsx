@@ -32,7 +32,7 @@ function CategoriesSection({
           {nameCategories.map((item, index: number) => (
             <li
               key={item.id}
-              className={`flex items-center gap-1 padding-inline-4 ${
+              className={`flex items-center gap-1 padding-4 ${
                 backgroundColors[index % backgroundColors.length]
               }`}
             >
