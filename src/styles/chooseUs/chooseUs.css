@@ -38,6 +38,7 @@
   position: relative;
   width: inherit;
   height: fit-content;
+  margin: auto;
   z-index: 2;
 }
 
