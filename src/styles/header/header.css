@@ -123,7 +123,7 @@ a {
   .mobile-navigation,
   .top-mobile-navigation {
     position: fixed;
-    inset: 22% 0 0 0%;
+    inset: 26% 0 0 0%;
     padding: min(30vh, 5rem) 2rem;
   }
 
