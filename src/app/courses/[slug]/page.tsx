@@ -28,7 +28,7 @@ export async function generateMetadata({
       images: [
         {
           url:
-            `https://back-education-website-production.up.railway.app${data.data[0]?.image.url}` ||
+            `NEXT_PUBLIC_STRAPI_API_URL${data.data[0]?.image.url}` ||
             "/images/eduspark.png",
           width: 1200,
           height: 630,
