@@ -51,3 +51,10 @@
 .blog-slider .article-auth::before {
   background-image: url("/images/auth.svg");
 }
+
+@media (max-width: 768px) {
+  .blog-slider {
+    position: relative;
+    padding-block-start: 6rem;
+  }
+}
