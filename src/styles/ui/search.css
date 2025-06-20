@@ -14,3 +14,10 @@
   font-size: 1rem;
   border-radius: 5px;
 }
+
+@media (max-width: 768px) {
+  .search {
+    position: absolute;
+    top: 0;
+  }
+}
